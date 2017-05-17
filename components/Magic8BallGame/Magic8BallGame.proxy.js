@@ -9,7 +9,7 @@ export default class Magic8BallProxy{
         }
     }
 
-    static async getAnswerGiphy (topic) {
+    static async getTopicGif (topic) {
         if(topic) {
             try {
                 let giphyResponse = await fetch('http://api.giphy.com/v1/gifs/search?q=' + topic +  "&api_key=dc6zaTOxFJmzC");
