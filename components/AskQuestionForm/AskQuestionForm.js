@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, {Component, PropTypes,} from 'react';
-import {Button, TextInput, View, StyleSheet,} from 'react-native';
+import {Button, TextInput, View,} from 'react-native';
 
 import styles from './AskQuestionForm.css';
 
