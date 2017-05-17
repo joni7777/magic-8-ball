@@ -32,7 +32,6 @@ class AskQuestionForm extends Component {
 
     handleKeyDown(e) {
         if(e.nativeEvent.key == "Enter"){
-            console.log('handleKeyDown == Enter');
             this.props.onQuestionAsked(this.state.question);
         }
     }
