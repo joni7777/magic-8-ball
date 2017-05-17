@@ -17,10 +17,8 @@ class Magic8BallGame extends Component {
         );
     }
 
-    onQuestionAsked(question) {
-        Magic8BallProxy.onQuestionAsked(question).then(answer => {
-            this.setState({answer: answer});
-        })
+    async onQuestionAsked(question) {
+        this.setState({answer: await Magic8BallProxy.onQuestionAsked(question)});
     }
 }
 
