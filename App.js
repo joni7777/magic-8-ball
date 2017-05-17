@@ -1,11 +1,11 @@
 import React from 'react';
+import Magic8BallGame from './components/Magic8BallGame/Magic8BallGame';
 
-import AskQuestionForm from './components/AskQuestionForm/AskQuestionForm';
 
 export default class App extends React.Component {
 	render() {
 		return (
-			<AskQuestionForm/>
+			<Magic8BallGame/>
 		);
 	}
 }
