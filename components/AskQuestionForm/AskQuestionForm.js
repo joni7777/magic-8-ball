@@ -20,7 +20,7 @@ class AskQuestionForm extends Component {
 					placeholder="Ask a question..."
 					returnKeyType="go"
 					onChangeText={(question) => this.setState({question})}
-					onKeyPress={() => this.handleKeyDown}
+					onKeyPress={(e) => this.handleKeyDown(e)}
 				/>
 				<Button
 					title="Send"
@@ -32,6 +32,7 @@ class AskQuestionForm extends Component {
 
     handleKeyDown(e) {
         if(e.nativeEvent.key == "Enter"){
+            console.log('handleKeyDown == Enter');
             this.props.onQuestionAsked(this.state.question);
         }
     }
