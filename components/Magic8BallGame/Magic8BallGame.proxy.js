@@ -1,9 +1,6 @@
-/**
- * Created by nataliebarnatan on 17/05/2017.
- */
+export default class Magic8BallProxy{
 
-module.exports = {
-    onQuestionAsked: function (question) {
+    static onQuestionAsked (question) {
         return fetch('https://the-answer-machine.herokuapp.com/?question=' + question)
             .then((response) => response.json())
             .catch((error) => {
