@@ -1,17 +1,11 @@
 import {StyleSheet,} from 'react-native';
 
 export default StyleSheet.create({
-	questionForm: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-		padding: 10
-	},
-	questionInput: {
-		height: 40,
-		borderColor: 'gray',
-		borderWidth: 1,
-		padding: 5
-	}
+    magic8BallGameContainer: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'stretch',
+        justifyContent: 'center',
+        padding: 10
+    },
 });

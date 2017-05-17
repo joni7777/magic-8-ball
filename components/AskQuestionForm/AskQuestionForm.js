@@ -18,7 +18,9 @@ class AskQuestionForm extends Component {
 					blurOnSubmit={true}
 					enablesReturnKeyAutomatically={true}
 					placeholder="Ask a question..."
+					returnKeyType="go"
 					onChangeText={(question) => this.setState({question})}
+					onKeyPress={() => this.handleKeyDown}
 				/>
 				<Button
 					title="Send"
@@ -27,6 +29,12 @@ class AskQuestionForm extends Component {
 			</View>
 		);
 	}
+
+    handleKeyDown(e) {
+        if(e.nativeEvent.key == "Enter"){
+            this.props.onQuestionAsked(this.state.question);
+        }
+    }
 }
 
 AskQuestionForm.propTypes = {onQuestionAsked: PropTypes.func};
