@@ -2,6 +2,8 @@ import _ from 'lodash';
 import React, {Component, PropTypes,} from 'react';
 import {Button, TextInput, View, StyleSheet,} from 'react-native';
 
+import styles from './AskQuestionForm.css';
+
 class AskQuestionForm extends Component {
 	state = {
 		question: ''
@@ -31,13 +33,3 @@ AskQuestionForm.propTypes = {onQuestionAsked: PropTypes.func};
 AskQuestionForm.defaultProps = {onQuestionAsked: _.noop};
 
 export default AskQuestionForm;
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-		padding: 10
-	},
-});
