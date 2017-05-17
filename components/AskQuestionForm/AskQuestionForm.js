@@ -11,10 +11,10 @@ class AskQuestionForm extends Component {
 
 	render() {
 		return (
-			<View style={styles.container}>
+			<View style={styles.questionForm}>
 				<TextInput
 					value={this.state.question}
-					style={{height: 40, borderColor: 'gray', borderWidth: 1, padding: 5}}
+					style={styles.questionInput}
 					blurOnSubmit={true}
 					enablesReturnKeyAutomatically={true}
 					placeholder="Ask a question..."
