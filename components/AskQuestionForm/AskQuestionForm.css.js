@@ -2,11 +2,12 @@ import {StyleSheet,} from 'react-native';
 
 export default StyleSheet.create({
     questionForm: {
-        flex: 1,
+        // flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 10
+        padding: 10,
+        alignSelf: 'stretch'
     },
     questionInput: {
         height: 40,

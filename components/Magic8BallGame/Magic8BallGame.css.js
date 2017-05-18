@@ -4,7 +4,7 @@ export default StyleSheet.create({
     magic8BallGameContainer: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'stretch',
+        alignItems: 'center',
         justifyContent: 'center',
         padding: 10
     },
