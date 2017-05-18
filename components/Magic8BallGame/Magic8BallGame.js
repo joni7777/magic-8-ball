@@ -12,7 +12,7 @@ class Magic8BallGame extends Component {
         return (
             <View style={styles.magic8BallGameContainer}>
                 <AskQuestionForm onQuestionAsked={(question) => this.onQuestionAsked(question)}/>
-                <Text>{this.state.answer}</Text>
+                <Text style={styles.magic8BallAnswer}>{this.state.answer}</Text>
                 { this.state.loadingAnswer ?
                     <Image
                         style={styles.magic8BallGiphy}

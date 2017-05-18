@@ -11,5 +11,8 @@ export default StyleSheet.create({
     magic8BallGiphy: {
         width:300,
         height: 300
+    },
+    magic8BallAnswer: {
+        fontSize: 18
     }
 });
