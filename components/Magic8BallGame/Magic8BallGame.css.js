@@ -13,6 +13,8 @@ export default StyleSheet.create({
         height: 300
     },
     magic8BallAnswer: {
-        fontSize: 18
+        fontSize: 18,
+        color: '#2C6A72',
+        margin: 10
     }
 });
