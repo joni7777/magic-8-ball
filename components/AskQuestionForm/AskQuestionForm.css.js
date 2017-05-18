@@ -3,7 +3,6 @@ import {StyleSheet,} from 'react-native';
 export default StyleSheet.create({
     questionForm: {
         // flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
@@ -14,5 +13,14 @@ export default StyleSheet.create({
         borderColor: 'gray',
         borderWidth: 1,
         padding: 5
+    },
+    askQuestionBtn: {
+        padding: 10,
+        height: 45,
+        width: 100,
+        overflow: 'hidden',
+        borderRadius: 4,
+        backgroundColor: '#42c299',
+        margin: 10
     }
 });

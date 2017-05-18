@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import React, {Component, PropTypes,} from 'react';
-import {Button, TextInput, View,} from 'react-native';
-
+import {TextInput, View,} from 'react-native';
+import Button from 'react-native-button'
 import styles from './AskQuestionForm.css';
 
 class AskQuestionForm extends Component {
@@ -23,9 +23,11 @@ class AskQuestionForm extends Component {
 					onKeyPress={(e) => this.handleKeyDown(e)}
 				/>
 				<Button
-					title="Send"
-					onPress={() => this.state.question && this.props.onQuestionAsked(this.state.question)}
-				/>
+					containerStyle={styles.askQuestionBtn}
+					style={{fontSize: 20, color: '#fff'}}
+					onPress={() => this.state.question && this.props.onQuestionAsked(this.state.question)}>
+					Send!
+				</Button>
 			</View>
 		);
 	}

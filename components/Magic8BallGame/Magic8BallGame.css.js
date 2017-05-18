@@ -3,7 +3,7 @@ import {StyleSheet,} from 'react-native';
 export default StyleSheet.create({
     magic8BallGameContainer: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#e8eff5',
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10,
