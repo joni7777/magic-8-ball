@@ -15,7 +15,7 @@ class Magic8BallGame extends Component {
                 <Text>{this.state.answer}</Text>
                 { this.state.loadingAnswer ?
                     <Image
-                        style={{width: 100, height: 100}}
+                        style={styles.magic8BallGiphy}
                         source={{uri: this.state.giphyUrl}}
                     />: null }
             </View>

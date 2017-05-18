@@ -6,6 +6,10 @@ export default StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 10
+        padding: 10,
     },
+    magic8BallGiphy: {
+        width:300,
+        height: 300
+    }
 });
